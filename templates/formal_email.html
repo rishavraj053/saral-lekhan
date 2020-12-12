@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}">
+{% endblock %}
+
+{% block body %}
+<h2>&nbsp;</h2><br><br>
+{% for category in category_info %}
+{% if loop.index % 2 == 0 %}
+
+<a href="leave.html"> <button class="button" value="hover" style="vertical-align:middle"
+        id="b"><span></span>{{ category.category_name.capitalize() }} </span></button></a>
+{% else %}
+<a href="leave.html"> <button class="button" value="hover" style="vertical-align:middle"
+    id="a"><span></span>{{ category.category_name.capitalize() }} </span></button></a>
+{% endif %}
+{% endfor %}
+
+{% endblock %}

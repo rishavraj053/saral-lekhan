@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Add New Email</title>
+<script src="{{ url_for('static', filename='/js/add-email.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <form action="">
+                    <select name="type_info" id="select_typeInfo">
+                        <option value="NULL">Select Service Type</option>
+                        {% for types in type_info %}
+                        <option value="{{ types['type_id'] }}">{{ types['type_name'] }}</option>
+                        {% endfor %}
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <form action="">
+                    <select name="category_info" id="select_categoryInfo">
+                        <option value="NULL">Select Category</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <form action="">
+                    <select name="subcategory_info" id="select_subCategoryInfo">
+                        <option value="NULL">Select Service Type</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-3">
+                <!-- Padding to centerlize form -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped" id="table_email">
+
+            </table>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

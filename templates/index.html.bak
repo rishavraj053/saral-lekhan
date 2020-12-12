@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Saral-lekhan</title>
+
+{% endblock %}
+
+{% block body %}
+<h1>Welcome</h1>
+{% endblock %}

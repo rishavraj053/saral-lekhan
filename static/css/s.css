@@ -1,0 +1,56 @@
+.ubea-bg {
+  background-position: center center;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.ubea-cover .overlay {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(35, 35, 35, 0.5);
+}
+
+
+ .ubea-cover {
+    height: 600px;
+  }
+  
+  
+  .ubea-bg {
+  background-position: center center;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.ubea-nav #ubea-logo {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+.ubea-container {
+  max-width: 1140px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+#ubea-header  a:hover {
+  color: white;
+}
+
+#ubea-header .a:hover i {
+  border: 1px solid white;
+}

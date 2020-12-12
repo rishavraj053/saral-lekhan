@@ -1,0 +1,38 @@
+#a{
+background-color: #f4511e;
+}
+
+#b{
+background-color:#309bb3;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  padding: 30px;
+  width: 314px;
+  height:200px;
+  
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}

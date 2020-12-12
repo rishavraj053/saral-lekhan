@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Admin Dashboard</title>
+{% endblock %}
+
+{% block body %}
+{% include 'admin-navbar.html' %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            {% include 'admin-sidemenu.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

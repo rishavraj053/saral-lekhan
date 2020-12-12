@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Email Template</title>
+{% endblock %}
+
+{% block body %}
+<form action="" method="POST">
+    <select name="type">
+        <option value="FORMAL">FORMAL</option>
+        <option value="INFORMAL">INFORMAL</option>
+    </select><br>
+    <select name="category">
+        <option value="LEAVE">LEAVE</option>
+        <option value="APPOINTMENT">APPOINTMENT</option>
+        <option value="RESIGNATION">RESIGNATION</option>
+        <option value="ENQUIRY">ENQUIRY</option>
+    </select><br>
+    <select name="sub_category" id="subcat">
+        {% for subcat in subcategories %}
+            <option value="{{ subcat }}">{{ subcat }}</option>
+        {% endfor %}
+    </select><br>
+</form>
+{% endblock %}
